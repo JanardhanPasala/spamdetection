@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Prediction</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}"></link>
+	</head>
+	
+	<body>
+		{% if spam_prediction == 1 %}
+		<h3 style="color:red;">Be Aware It's Probably A SPAM Message</h3>
+		{% else %}
+		<h3 style="color:blue;">It's Not A SPAM Message</h3>
+		{% endif %}
+	</body>
+	
+</html>
