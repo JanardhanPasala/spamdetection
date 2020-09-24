@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: gunicorn spam_detection:app
